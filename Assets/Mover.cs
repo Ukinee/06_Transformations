@@ -6,7 +6,7 @@ public class Mover : MonoBehaviour
 {
     [SerializeField] private float _speed;
     
-    void Update()
+    private void Update()
     {
         Move();
     }
