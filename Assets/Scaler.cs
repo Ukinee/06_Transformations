@@ -5,15 +5,16 @@ using UnityEngine;
 public class Scaler : MonoBehaviour
 {
     [SerializeField] private float _speed;
+    [SerializeField] private float _targetScaleFactor;
 
     private Vector3 _targetScale;
     
-    void Start()
+    private void Start()
     {
-        _targetScale = new Vector3(4, 4, 4);
+        _targetScale = Vector3.one * _targetScaleFactor;
     }
 
-    void Update()
+    private void Update()
     {
         Scale();
     }
